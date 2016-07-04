@@ -1,0 +1,1059 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EE656F70C59A803698D9C80 /* libPods-VDUtilTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBA58B70271F4FD79BBB3B0 /* libPods-VDUtilTests.a */; };
+		CC8B006EDDEFD117BD009A89 /* libPods-VDUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37236D1A5A9EBA522DF782BD /* libPods-VDUtil.a */; };
+		FE0F62831B04826200F489E9 /* UIView+VDLoadingHud.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F62821B04826200F489E9 /* UIView+VDLoadingHud.m */; };
+		FE0F62861B0483F300F489E9 /* UIView+VDNoticeMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F62851B0483F300F489E9 /* UIView+VDNoticeMsg.m */; };
+		FE0F628D1B04866B00F489E9 /* VDNoticeMsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F628B1B04866B00F489E9 /* VDNoticeMsgViewController.m */; };
+		FE0F628E1B04866B00F489E9 /* VDNoticeMsgViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE0F628C1B04866B00F489E9 /* VDNoticeMsgViewController.xib */; };
+		FE0F63261B057EF600F489E9 /* VDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F63251B057EF600F489E9 /* VDRouter.m */; };
+		FE0F632A1B0584BC00F489E9 /* VDRouterRootNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F63281B0584BC00F489E9 /* VDRouterRootNavigationViewController.m */; };
+		FE0F632E1B05852F00F489E9 /* VDRouterBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F632D1B05852F00F489E9 /* VDRouterBaseAppDelegate.m */; };
+		FE0F63311B0589A900F489E9 /* VDRouterBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F63301B0589A900F489E9 /* VDRouterBaseViewController.m */; };
+		FE0F63341B058EB900F489E9 /* TestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F63331B058EB900F489E9 /* TestRouter.m */; };
+		FE0F64131B05E98600F489E9 /* VDLoadingHudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F64111B05E98600F489E9 /* VDLoadingHudViewController.m */; };
+		FE0F64141B05E98600F489E9 /* VDLoadingHudViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE0F64121B05E98600F489E9 /* VDLoadingHudViewController.xib */; };
+		FE0F641D1B05F5D100F489E9 /* vd_loading_hud_error.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0F64191B05F5D100F489E9 /* vd_loading_hud_error.png */; };
+		FE0F641E1B05F5D100F489E9 /* vd_loading_hud_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0F641A1B05F5D100F489E9 /* vd_loading_hud_error@2x.png */; };
+		FE0F641F1B05F5D100F489E9 /* vd_loading_hud_success.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0F641B1B05F5D100F489E9 /* vd_loading_hud_success.png */; };
+		FE0F64201B05F5D100F489E9 /* vd_loading_hud_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0F641C1B05F5D100F489E9 /* vd_loading_hud_success@2x.png */; };
+		FE0F64241B05F9F200F489E9 /* NSObject+VDPersistent.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F64231B05F9F100F489E9 /* NSObject+VDPersistent.m */; };
+		FE23CE551A7B8BF3007C059D /* UIImageView+VDFullscreen.m in Sources */ = {isa = PBXBuildFile; fileRef = FE23CE541A7B8BF3007C059D /* UIImageView+VDFullscreen.m */; };
+		FE23CE581A7F5A28007C059D /* NSObject+VDAspects.m in Sources */ = {isa = PBXBuildFile; fileRef = FE23CE571A7F5A28007C059D /* NSObject+VDAspects.m */; };
+		FE8426621D2A2E6400B628D8 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = FE84265D1D2A2E6400B628D8 /* Base64.m */; };
+		FE8426631D2A2E6400B628D8 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8426611D2A2E6400B628D8 /* CocoaSecurity.m */; };
+		FE91B6D21A7B13C0004E1BF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B6D11A7B13C0004E1BF9 /* main.m */; };
+		FE91B6D51A7B13C0004E1BF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B6D41A7B13C0004E1BF9 /* AppDelegate.m */; };
+		FE91B6D81A7B13C0004E1BF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B6D71A7B13C0004E1BF9 /* ViewController.m */; };
+		FE91B6DB1A7B13C0004E1BF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE91B6D91A7B13C0004E1BF9 /* Main.storyboard */; };
+		FE91B6DD1A7B13C0004E1BF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE91B6DC1A7B13C0004E1BF9 /* Images.xcassets */; };
+		FE91B6E01A7B13C0004E1BF9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE91B6DE1A7B13C0004E1BF9 /* LaunchScreen.xib */; };
+		FE91B6EC1A7B13C0004E1BF9 /* VDUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B6EB1A7B13C0004E1BF9 /* VDUtilTests.m */; };
+		FE91B72C1A7B1424004E1BF9 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B6FA1A7B1424004E1BF9 /* PulsingHaloLayer.m */; };
+		FE91B72E1A7B1424004E1BF9 /* UIView+VDBounce.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B7001A7B1424004E1BF9 /* UIView+VDBounce.m */; };
+		FE91B72F1A7B1424004E1BF9 /* UIView+VDShake.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B7021A7B1424004E1BF9 /* UIView+VDShake.m */; };
+		FE91B7301A7B1424004E1BF9 /* UIView+VDAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B7041A7B1424004E1BF9 /* UIView+VDAnimation.m */; };
+		FE91B7311A7B1424004E1BF9 /* NSObject+VDReactiveCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B7081A7B1424004E1BF9 /* NSObject+VDReactiveCocoa.m */; };
+		FE91B7321A7B1424004E1BF9 /* UILabel+VDMarquee.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B70B1A7B1424004E1BF9 /* UILabel+VDMarquee.m */; };
+		FE91B7331A7B1424004E1BF9 /* UITextView+VDLengthLimitation.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B70E1A7B1424004E1BF9 /* UITextView+VDLengthLimitation.m */; };
+		FE91B7341A7B1424004E1BF9 /* UITextView+VDPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B7101A7B1424004E1BF9 /* UITextView+VDPlaceHolder.m */; };
+		FE91B7351A7B1424004E1BF9 /* VDDateBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B7191A7B1424004E1BF9 /* VDDateBoardController.m */; };
+		FE91B7361A7B1424004E1BF9 /* VDDateBoardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE91B71A1A7B1424004E1BF9 /* VDDateBoardController.xib */; };
+		FE91B7371A7B1424004E1BF9 /* VDKeyboardInputAccessoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B71C1A7B1424004E1BF9 /* VDKeyboardInputAccessoryViewController.m */; };
+		FE91B7381A7B1424004E1BF9 /* VDPickerBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B71E1A7B1424004E1BF9 /* VDPickerBoardController.m */; };
+		FE91B7391A7B1424004E1BF9 /* VDPickerBoardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE91B71F1A7B1424004E1BF9 /* VDPickerBoardController.xib */; };
+		FE91B73A1A7B1424004E1BF9 /* UISearchBar+VDAlwaysReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B7221A7B1424004E1BF9 /* UISearchBar+VDAlwaysReveal.m */; };
+		FE91B73B1A7B1424004E1BF9 /* UITextField+VDAlwaysReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B7261A7B1424004E1BF9 /* UITextField+VDAlwaysReveal.m */; };
+		FE91B73C1A7B1424004E1BF9 /* UITextField+VDFloatingTip.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B7281A7B1424004E1BF9 /* UITextField+VDFloatingTip.m */; };
+		FE91B7401A7B1C83004E1BF9 /* UIViewController+VDAspects.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B73F1A7B1C83004E1BF9 /* UIViewController+VDAspects.m */; };
+		FE91B7441A7B1DAA004E1BF9 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91B7421A7B1DAA004E1BF9 /* TestViewController.m */; };
+		FE91B7451A7B1DAA004E1BF9 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE91B7431A7B1DAA004E1BF9 /* TestViewController.xib */; };
+		FE9CFEDD1B047D5400031B67 /* VDSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9CFEDC1B047D5400031B67 /* VDSocketClient.m */; };
+		FEECE5141A7F79D00074B57A /* NSObject+VDPop.m in Sources */ = {isa = PBXBuildFile; fileRef = FEECE5131A7F79D00074B57A /* NSObject+VDPop.m */; };
+		FEECE51E1A809CCA0074B57A /* UIView+VDFullscreen.m in Sources */ = {isa = PBXBuildFile; fileRef = FEECE51D1A809CCA0074B57A /* UIView+VDFullscreen.m */; };
+		FEECE6401A8DEE380074B57A /* UIButton+VDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FEECE63F1A8DEE380074B57A /* UIButton+VDUtil.m */; };
+		FEF5A0E01AC91F0E00130D02 /* NSObject+VDDelayOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF5A0DF1AC91F0E00130D02 /* NSObject+VDDelayOperation.m */; };
+		FEF5A0E31AC92D1D00130D02 /* CheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF5A0E21AC92D1D00130D02 /* CheckViewController.m */; };
+		FEFB414A1B043E2800587F8C /* NSObject+VDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB41431B043E2800587F8C /* NSObject+VDModel.m */; };
+		FEFB414B1B043E2800587F8C /* VDModelFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB41451B043E2800587F8C /* VDModelFile.m */; };
+		FEFB414C1B043E2800587F8C /* VDModelImageFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB41471B043E2800587F8C /* VDModelImageFile.m */; };
+		FEFB414D1B043E2800587F8C /* VDModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB41491B043E2800587F8C /* VDModelObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE91B6E61A7B13C0004E1BF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE91B6C41A7B13C0004E1BF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE91B6CB1A7B13C0004E1BF9;
+			remoteInfo = VDUtil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F7022E78B8F27D0B651735C /* Pods-VDUtilTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VDUtilTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VDUtilTests/Pods-VDUtilTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37236D1A5A9EBA522DF782BD /* libPods-VDUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VDUtil.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DBA58B70271F4FD79BBB3B0 /* libPods-VDUtilTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VDUtilTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7552C18043B993580FFF2D19 /* Pods-VDUtil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VDUtil.release.xcconfig"; path = "Pods/Target Support Files/Pods-VDUtil/Pods-VDUtil.release.xcconfig"; sourceTree = "<group>"; };
+		840D46BE73325EB987A8C5F0 /* Pods-VDUtilTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VDUtilTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VDUtilTests/Pods-VDUtilTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D2A08DD4EE50AC9FCFD9986 /* Pods-VDUtil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VDUtil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VDUtil/Pods-VDUtil.debug.xcconfig"; sourceTree = "<group>"; };
+		FE0F62811B04826200F489E9 /* UIView+VDLoadingHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDLoadingHud.h"; sourceTree = "<group>"; };
+		FE0F62821B04826200F489E9 /* UIView+VDLoadingHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDLoadingHud.m"; sourceTree = "<group>"; };
+		FE0F62841B0483F300F489E9 /* UIView+VDNoticeMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDNoticeMsg.h"; sourceTree = "<group>"; };
+		FE0F62851B0483F300F489E9 /* UIView+VDNoticeMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDNoticeMsg.m"; sourceTree = "<group>"; };
+		FE0F628A1B04866B00F489E9 /* VDNoticeMsgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDNoticeMsgViewController.h; sourceTree = "<group>"; };
+		FE0F628B1B04866B00F489E9 /* VDNoticeMsgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDNoticeMsgViewController.m; sourceTree = "<group>"; };
+		FE0F628C1B04866B00F489E9 /* VDNoticeMsgViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VDNoticeMsgViewController.xib; sourceTree = "<group>"; };
+		FE0F63241B057EF600F489E9 /* VDRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDRouter.h; sourceTree = "<group>"; };
+		FE0F63251B057EF600F489E9 /* VDRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDRouter.m; sourceTree = "<group>"; };
+		FE0F63271B0584BC00F489E9 /* VDRouterRootNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDRouterRootNavigationViewController.h; sourceTree = "<group>"; };
+		FE0F63281B0584BC00F489E9 /* VDRouterRootNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDRouterRootNavigationViewController.m; sourceTree = "<group>"; };
+		FE0F632C1B05852F00F489E9 /* VDRouterBaseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDRouterBaseAppDelegate.h; sourceTree = "<group>"; };
+		FE0F632D1B05852F00F489E9 /* VDRouterBaseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDRouterBaseAppDelegate.m; sourceTree = "<group>"; };
+		FE0F632F1B0589A900F489E9 /* VDRouterBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDRouterBaseViewController.h; sourceTree = "<group>"; };
+		FE0F63301B0589A900F489E9 /* VDRouterBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDRouterBaseViewController.m; sourceTree = "<group>"; };
+		FE0F63321B058EB900F489E9 /* TestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRouter.h; sourceTree = "<group>"; };
+		FE0F63331B058EB900F489E9 /* TestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRouter.m; sourceTree = "<group>"; };
+		FE0F64101B05E98600F489E9 /* VDLoadingHudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDLoadingHudViewController.h; sourceTree = "<group>"; };
+		FE0F64111B05E98600F489E9 /* VDLoadingHudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDLoadingHudViewController.m; sourceTree = "<group>"; };
+		FE0F64121B05E98600F489E9 /* VDLoadingHudViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VDLoadingHudViewController.xib; sourceTree = "<group>"; };
+		FE0F64191B05F5D100F489E9 /* vd_loading_hud_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vd_loading_hud_error.png; sourceTree = "<group>"; };
+		FE0F641A1B05F5D100F489E9 /* vd_loading_hud_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vd_loading_hud_error@2x.png"; sourceTree = "<group>"; };
+		FE0F641B1B05F5D100F489E9 /* vd_loading_hud_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vd_loading_hud_success.png; sourceTree = "<group>"; };
+		FE0F641C1B05F5D100F489E9 /* vd_loading_hud_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vd_loading_hud_success@2x.png"; sourceTree = "<group>"; };
+		FE0F64221B05F9F100F489E9 /* NSObject+VDPersistent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDPersistent.h"; sourceTree = "<group>"; };
+		FE0F64231B05F9F100F489E9 /* NSObject+VDPersistent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDPersistent.m"; sourceTree = "<group>"; };
+		FE23CE531A7B8BF3007C059D /* UIImageView+VDFullscreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+VDFullscreen.h"; sourceTree = "<group>"; };
+		FE23CE541A7B8BF3007C059D /* UIImageView+VDFullscreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+VDFullscreen.m"; sourceTree = "<group>"; };
+		FE23CE561A7F5A28007C059D /* NSObject+VDAspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDAspects.h"; sourceTree = "<group>"; };
+		FE23CE571A7F5A28007C059D /* NSObject+VDAspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDAspects.m"; sourceTree = "<group>"; };
+		FE84265C1D2A2E6400B628D8 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		FE84265D1D2A2E6400B628D8 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		FE8426601D2A2E6400B628D8 /* CocoaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
+		FE8426611D2A2E6400B628D8 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
+		FE91B6CC1A7B13C0004E1BF9 /* VDUtil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VDUtil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE91B6D01A7B13C0004E1BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE91B6D11A7B13C0004E1BF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE91B6D31A7B13C0004E1BF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE91B6D41A7B13C0004E1BF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE91B6D61A7B13C0004E1BF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FE91B6D71A7B13C0004E1BF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FE91B6DA1A7B13C0004E1BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE91B6DC1A7B13C0004E1BF9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FE91B6DF1A7B13C0004E1BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FE91B6E51A7B13C0004E1BF9 /* VDUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VDUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE91B6EA1A7B13C0004E1BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE91B6EB1A7B13C0004E1BF9 /* VDUtilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDUtilTests.m; sourceTree = "<group>"; };
+		FE91B6F91A7B1424004E1BF9 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
+		FE91B6FA1A7B1424004E1BF9 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
+		FE91B6FF1A7B1424004E1BF9 /* UIView+VDBounce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDBounce.h"; sourceTree = "<group>"; };
+		FE91B7001A7B1424004E1BF9 /* UIView+VDBounce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDBounce.m"; sourceTree = "<group>"; };
+		FE91B7011A7B1424004E1BF9 /* UIView+VDShake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDShake.h"; sourceTree = "<group>"; };
+		FE91B7021A7B1424004E1BF9 /* UIView+VDShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDShake.m"; sourceTree = "<group>"; };
+		FE91B7031A7B1424004E1BF9 /* UIView+VDAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDAnimation.h"; sourceTree = "<group>"; };
+		FE91B7041A7B1424004E1BF9 /* UIView+VDAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDAnimation.m"; sourceTree = "<group>"; };
+		FE91B7071A7B1424004E1BF9 /* NSObject+VDReactiveCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDReactiveCocoa.h"; sourceTree = "<group>"; };
+		FE91B7081A7B1424004E1BF9 /* NSObject+VDReactiveCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDReactiveCocoa.m"; sourceTree = "<group>"; };
+		FE91B70A1A7B1424004E1BF9 /* UILabel+VDMarquee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+VDMarquee.h"; sourceTree = "<group>"; };
+		FE91B70B1A7B1424004E1BF9 /* UILabel+VDMarquee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+VDMarquee.m"; sourceTree = "<group>"; };
+		FE91B70D1A7B1424004E1BF9 /* UITextView+VDLengthLimitation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+VDLengthLimitation.h"; sourceTree = "<group>"; };
+		FE91B70E1A7B1424004E1BF9 /* UITextView+VDLengthLimitation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+VDLengthLimitation.m"; sourceTree = "<group>"; };
+		FE91B70F1A7B1424004E1BF9 /* UITextView+VDPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+VDPlaceHolder.h"; sourceTree = "<group>"; };
+		FE91B7101A7B1424004E1BF9 /* UITextView+VDPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+VDPlaceHolder.m"; sourceTree = "<group>"; };
+		FE91B7181A7B1424004E1BF9 /* VDDateBoardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDateBoardController.h; sourceTree = "<group>"; };
+		FE91B7191A7B1424004E1BF9 /* VDDateBoardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDDateBoardController.m; sourceTree = "<group>"; };
+		FE91B71A1A7B1424004E1BF9 /* VDDateBoardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VDDateBoardController.xib; sourceTree = "<group>"; };
+		FE91B71B1A7B1424004E1BF9 /* VDKeyboardInputAccessoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKeyboardInputAccessoryViewController.h; sourceTree = "<group>"; };
+		FE91B71C1A7B1424004E1BF9 /* VDKeyboardInputAccessoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDKeyboardInputAccessoryViewController.m; sourceTree = "<group>"; };
+		FE91B71D1A7B1424004E1BF9 /* VDPickerBoardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDPickerBoardController.h; sourceTree = "<group>"; };
+		FE91B71E1A7B1424004E1BF9 /* VDPickerBoardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDPickerBoardController.m; sourceTree = "<group>"; };
+		FE91B71F1A7B1424004E1BF9 /* VDPickerBoardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VDPickerBoardController.xib; sourceTree = "<group>"; };
+		FE91B7211A7B1424004E1BF9 /* UISearchBar+VDAlwaysReveal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+VDAlwaysReveal.h"; sourceTree = "<group>"; };
+		FE91B7221A7B1424004E1BF9 /* UISearchBar+VDAlwaysReveal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+VDAlwaysReveal.m"; sourceTree = "<group>"; };
+		FE91B7251A7B1424004E1BF9 /* UITextField+VDAlwaysReveal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VDAlwaysReveal.h"; sourceTree = "<group>"; };
+		FE91B7261A7B1424004E1BF9 /* UITextField+VDAlwaysReveal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+VDAlwaysReveal.m"; sourceTree = "<group>"; };
+		FE91B7271A7B1424004E1BF9 /* UITextField+VDFloatingTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+VDFloatingTip.h"; sourceTree = "<group>"; };
+		FE91B7281A7B1424004E1BF9 /* UITextField+VDFloatingTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+VDFloatingTip.m"; sourceTree = "<group>"; };
+		FE91B72A1A7B1424004E1BF9 /* VDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDUtil.h; sourceTree = "<group>"; };
+		FE91B73E1A7B1C83004E1BF9 /* UIViewController+VDAspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDAspects.h"; sourceTree = "<group>"; };
+		FE91B73F1A7B1C83004E1BF9 /* UIViewController+VDAspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDAspects.m"; sourceTree = "<group>"; };
+		FE91B7411A7B1DAA004E1BF9 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		FE91B7421A7B1DAA004E1BF9 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		FE91B7431A7B1DAA004E1BF9 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		FE9CFEDB1B047D5400031B67 /* VDSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDSocketClient.h; sourceTree = "<group>"; };
+		FE9CFEDC1B047D5400031B67 /* VDSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDSocketClient.m; sourceTree = "<group>"; };
+		FEECE5121A7F79D00074B57A /* NSObject+VDPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDPop.h"; sourceTree = "<group>"; };
+		FEECE5131A7F79D00074B57A /* NSObject+VDPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDPop.m"; sourceTree = "<group>"; };
+		FEECE51C1A809CCA0074B57A /* UIView+VDFullscreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDFullscreen.h"; sourceTree = "<group>"; };
+		FEECE51D1A809CCA0074B57A /* UIView+VDFullscreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDFullscreen.m"; sourceTree = "<group>"; };
+		FEECE63E1A8DEE380074B57A /* UIButton+VDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+VDUtil.h"; sourceTree = "<group>"; };
+		FEECE63F1A8DEE380074B57A /* UIButton+VDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+VDUtil.m"; sourceTree = "<group>"; };
+		FEF5A0DE1AC91F0D00130D02 /* NSObject+VDDelayOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDDelayOperation.h"; sourceTree = "<group>"; };
+		FEF5A0DF1AC91F0E00130D02 /* NSObject+VDDelayOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDDelayOperation.m"; sourceTree = "<group>"; };
+		FEF5A0E11AC92D1D00130D02 /* CheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckViewController.h; sourceTree = "<group>"; };
+		FEF5A0E21AC92D1D00130D02 /* CheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckViewController.m; sourceTree = "<group>"; };
+		FEFB41421B043E2800587F8C /* NSObject+VDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDModel.h"; sourceTree = "<group>"; };
+		FEFB41431B043E2800587F8C /* NSObject+VDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDModel.m"; sourceTree = "<group>"; };
+		FEFB41441B043E2800587F8C /* VDModelFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDModelFile.h; sourceTree = "<group>"; };
+		FEFB41451B043E2800587F8C /* VDModelFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDModelFile.m; sourceTree = "<group>"; };
+		FEFB41461B043E2800587F8C /* VDModelImageFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDModelImageFile.h; sourceTree = "<group>"; };
+		FEFB41471B043E2800587F8C /* VDModelImageFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDModelImageFile.m; sourceTree = "<group>"; };
+		FEFB41481B043E2800587F8C /* VDModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDModelObject.h; sourceTree = "<group>"; };
+		FEFB41491B043E2800587F8C /* VDModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDModelObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE91B6C91A7B13C0004E1BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8B006EDDEFD117BD009A89 /* libPods-VDUtil.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE91B6E21A7B13C0004E1BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE656F70C59A803698D9C80 /* libPods-VDUtilTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5485B18A74B2431CA65FACA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37236D1A5A9EBA522DF782BD /* libPods-VDUtil.a */,
+				5DBA58B70271F4FD79BBB3B0 /* libPods-VDUtilTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DB1F0D05AD8EF8CFFC39C42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D2A08DD4EE50AC9FCFD9986 /* Pods-VDUtil.debug.xcconfig */,
+				7552C18043B993580FFF2D19 /* Pods-VDUtil.release.xcconfig */,
+				2F7022E78B8F27D0B651735C /* Pods-VDUtilTests.debug.xcconfig */,
+				840D46BE73325EB987A8C5F0 /* Pods-VDUtilTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE0F627F1B04820C00F489E9 /* LoadingHud */ = {
+			isa = PBXGroup;
+			children = (
+				FE0F62811B04826200F489E9 /* UIView+VDLoadingHud.h */,
+				FE0F62821B04826200F489E9 /* UIView+VDLoadingHud.m */,
+				FE0F64101B05E98600F489E9 /* VDLoadingHudViewController.h */,
+				FE0F64111B05E98600F489E9 /* VDLoadingHudViewController.m */,
+				FE0F64121B05E98600F489E9 /* VDLoadingHudViewController.xib */,
+			);
+			path = LoadingHud;
+			sourceTree = "<group>";
+		};
+		FE0F62801B04820C00F489E9 /* NotifyMsg */ = {
+			isa = PBXGroup;
+			children = (
+				FE0F62841B0483F300F489E9 /* UIView+VDNoticeMsg.h */,
+				FE0F62851B0483F300F489E9 /* UIView+VDNoticeMsg.m */,
+				FE0F628A1B04866B00F489E9 /* VDNoticeMsgViewController.h */,
+				FE0F628B1B04866B00F489E9 /* VDNoticeMsgViewController.m */,
+				FE0F628C1B04866B00F489E9 /* VDNoticeMsgViewController.xib */,
+			);
+			path = NotifyMsg;
+			sourceTree = "<group>";
+		};
+		FE0F63231B057EE300F489E9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FE0F63241B057EF600F489E9 /* VDRouter.h */,
+				FE0F63251B057EF600F489E9 /* VDRouter.m */,
+				FE0F63271B0584BC00F489E9 /* VDRouterRootNavigationViewController.h */,
+				FE0F63281B0584BC00F489E9 /* VDRouterRootNavigationViewController.m */,
+				FE0F632C1B05852F00F489E9 /* VDRouterBaseAppDelegate.h */,
+				FE0F632D1B05852F00F489E9 /* VDRouterBaseAppDelegate.m */,
+				FE0F632F1B0589A900F489E9 /* VDRouterBaseViewController.h */,
+				FE0F63301B0589A900F489E9 /* VDRouterBaseViewController.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FE0F64211B05F93400F489E9 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				FE0F64221B05F9F100F489E9 /* NSObject+VDPersistent.h */,
+				FE0F64231B05F9F100F489E9 /* NSObject+VDPersistent.m */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		FE23CE521A7B8B70007C059D /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FE23CE531A7B8BF3007C059D /* UIImageView+VDFullscreen.h */,
+				FE23CE541A7B8BF3007C059D /* UIImageView+VDFullscreen.m */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		FE84265B1D2A2E6400B628D8 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				FE84265C1D2A2E6400B628D8 /* Base64.h */,
+				FE84265D1D2A2E6400B628D8 /* Base64.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		FE84265E1D2A2E6400B628D8 /* CocoaSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				FE84265F1D2A2E6400B628D8 /* CocoaSecurity */,
+			);
+			path = CocoaSecurity;
+			sourceTree = "<group>";
+		};
+		FE84265F1D2A2E6400B628D8 /* CocoaSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				FE8426601D2A2E6400B628D8 /* CocoaSecurity.h */,
+				FE8426611D2A2E6400B628D8 /* CocoaSecurity.m */,
+			);
+			path = CocoaSecurity;
+			sourceTree = "<group>";
+		};
+		FE91B6C31A7B13C0004E1BF9 = {
+			isa = PBXGroup;
+			children = (
+				FE91B6CE1A7B13C0004E1BF9 /* VDUtil */,
+				FE91B6E81A7B13C0004E1BF9 /* VDUtilTests */,
+				FE91B6CD1A7B13C0004E1BF9 /* Products */,
+				9DB1F0D05AD8EF8CFFC39C42 /* Pods */,
+				5485B18A74B2431CA65FACA8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE91B6CD1A7B13C0004E1BF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B6CC1A7B13C0004E1BF9 /* VDUtil.app */,
+				FE91B6E51A7B13C0004E1BF9 /* VDUtilTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE91B6CE1A7B13C0004E1BF9 /* VDUtil */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B6F51A7B1424004E1BF9 /* pods */,
+				FE91B6D31A7B13C0004E1BF9 /* AppDelegate.h */,
+				FE91B6D41A7B13C0004E1BF9 /* AppDelegate.m */,
+				FE91B6D61A7B13C0004E1BF9 /* ViewController.h */,
+				FE91B6D71A7B13C0004E1BF9 /* ViewController.m */,
+				FE91B7411A7B1DAA004E1BF9 /* TestViewController.h */,
+				FE0F63321B058EB900F489E9 /* TestRouter.h */,
+				FE0F63331B058EB900F489E9 /* TestRouter.m */,
+				FE91B7421A7B1DAA004E1BF9 /* TestViewController.m */,
+				FE91B7431A7B1DAA004E1BF9 /* TestViewController.xib */,
+				FEF5A0E11AC92D1D00130D02 /* CheckViewController.h */,
+				FEF5A0E21AC92D1D00130D02 /* CheckViewController.m */,
+				FE91B6D91A7B13C0004E1BF9 /* Main.storyboard */,
+				FE91B6DC1A7B13C0004E1BF9 /* Images.xcassets */,
+				FE91B6DE1A7B13C0004E1BF9 /* LaunchScreen.xib */,
+				FE91B6CF1A7B13C0004E1BF9 /* Supporting Files */,
+			);
+			path = VDUtil;
+			sourceTree = "<group>";
+		};
+		FE91B6CF1A7B13C0004E1BF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B6D01A7B13C0004E1BF9 /* Info.plist */,
+				FE91B6D11A7B13C0004E1BF9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE91B6E81A7B13C0004E1BF9 /* VDUtilTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B6EB1A7B13C0004E1BF9 /* VDUtilTests.m */,
+				FE91B6E91A7B13C0004E1BF9 /* Supporting Files */,
+			);
+			path = VDUtilTests;
+			sourceTree = "<group>";
+		};
+		FE91B6E91A7B13C0004E1BF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B6EA1A7B13C0004E1BF9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE91B6F51A7B1424004E1BF9 /* pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B6F61A7B1424004E1BF9 /* Classes */,
+				FE91B72B1A7B1424004E1BF9 /* Resources */,
+			);
+			path = pods;
+			sourceTree = "<group>";
+		};
+		FE91B6F61A7B1424004E1BF9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE84265B1D2A2E6400B628D8 /* Base64 */,
+				FE84265E1D2A2E6400B628D8 /* CocoaSecurity */,
+				FE0F64211B05F93400F489E9 /* Persistent */,
+				FE0F63231B057EE300F489E9 /* Router */,
+				FE0F627F1B04820C00F489E9 /* LoadingHud */,
+				FE0F62801B04820C00F489E9 /* NotifyMsg */,
+				FE9CFEDA1B047D4500031B67 /* Network */,
+				FEFB41411B043E2800587F8C /* Model */,
+				FEECE63D1A8DEE2B0074B57A /* UIButton */,
+				FEECE51B1A809C970074B57A /* UIView */,
+				FE23CE521A7B8B70007C059D /* UIImageView */,
+				FE91B73D1A7B1C6E004E1BF9 /* UIViewController */,
+				FE91B6F71A7B1424004E1BF9 /* Animation */,
+				FE91B7061A7B1424004E1BF9 /* NSObject */,
+				FE91B7091A7B1424004E1BF9 /* UILabel */,
+				FE91B70C1A7B1424004E1BF9 /* UITextView */,
+				FE91B7161A7B1424004E1BF9 /* VDTextInput */,
+				FE91B72A1A7B1424004E1BF9 /* VDUtil.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE91B6F71A7B1424004E1BF9 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B6F81A7B1424004E1BF9 /* CALayer */,
+				FE91B6FE1A7B1424004E1BF9 /* UIView */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		FE91B6F81A7B1424004E1BF9 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B6F91A7B1424004E1BF9 /* PulsingHaloLayer.h */,
+				FE91B6FA1A7B1424004E1BF9 /* PulsingHaloLayer.m */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		FE91B6FE1A7B1424004E1BF9 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B6FF1A7B1424004E1BF9 /* UIView+VDBounce.h */,
+				FE91B7001A7B1424004E1BF9 /* UIView+VDBounce.m */,
+				FE91B7011A7B1424004E1BF9 /* UIView+VDShake.h */,
+				FE91B7021A7B1424004E1BF9 /* UIView+VDShake.m */,
+				FE91B7031A7B1424004E1BF9 /* UIView+VDAnimation.h */,
+				FE91B7041A7B1424004E1BF9 /* UIView+VDAnimation.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		FE91B7061A7B1424004E1BF9 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B7071A7B1424004E1BF9 /* NSObject+VDReactiveCocoa.h */,
+				FE91B7081A7B1424004E1BF9 /* NSObject+VDReactiveCocoa.m */,
+				FE23CE561A7F5A28007C059D /* NSObject+VDAspects.h */,
+				FE23CE571A7F5A28007C059D /* NSObject+VDAspects.m */,
+				FEECE5121A7F79D00074B57A /* NSObject+VDPop.h */,
+				FEECE5131A7F79D00074B57A /* NSObject+VDPop.m */,
+				FEF5A0DE1AC91F0D00130D02 /* NSObject+VDDelayOperation.h */,
+				FEF5A0DF1AC91F0E00130D02 /* NSObject+VDDelayOperation.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		FE91B7091A7B1424004E1BF9 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B70A1A7B1424004E1BF9 /* UILabel+VDMarquee.h */,
+				FE91B70B1A7B1424004E1BF9 /* UILabel+VDMarquee.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		FE91B70C1A7B1424004E1BF9 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B70D1A7B1424004E1BF9 /* UITextView+VDLengthLimitation.h */,
+				FE91B70E1A7B1424004E1BF9 /* UITextView+VDLengthLimitation.m */,
+				FE91B70F1A7B1424004E1BF9 /* UITextView+VDPlaceHolder.h */,
+				FE91B7101A7B1424004E1BF9 /* UITextView+VDPlaceHolder.m */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		FE91B7161A7B1424004E1BF9 /* VDTextInput */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B7171A7B1424004E1BF9 /* KeyBoard */,
+				FE91B7201A7B1424004E1BF9 /* UISearchBar */,
+				FE91B7241A7B1424004E1BF9 /* UITextField */,
+			);
+			path = VDTextInput;
+			sourceTree = "<group>";
+		};
+		FE91B7171A7B1424004E1BF9 /* KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B7181A7B1424004E1BF9 /* VDDateBoardController.h */,
+				FE91B7191A7B1424004E1BF9 /* VDDateBoardController.m */,
+				FE91B71A1A7B1424004E1BF9 /* VDDateBoardController.xib */,
+				FE91B71B1A7B1424004E1BF9 /* VDKeyboardInputAccessoryViewController.h */,
+				FE91B71C1A7B1424004E1BF9 /* VDKeyboardInputAccessoryViewController.m */,
+				FE91B71D1A7B1424004E1BF9 /* VDPickerBoardController.h */,
+				FE91B71E1A7B1424004E1BF9 /* VDPickerBoardController.m */,
+				FE91B71F1A7B1424004E1BF9 /* VDPickerBoardController.xib */,
+			);
+			path = KeyBoard;
+			sourceTree = "<group>";
+		};
+		FE91B7201A7B1424004E1BF9 /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B7211A7B1424004E1BF9 /* UISearchBar+VDAlwaysReveal.h */,
+				FE91B7221A7B1424004E1BF9 /* UISearchBar+VDAlwaysReveal.m */,
+			);
+			path = UISearchBar;
+			sourceTree = "<group>";
+		};
+		FE91B7241A7B1424004E1BF9 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B7251A7B1424004E1BF9 /* UITextField+VDAlwaysReveal.h */,
+				FE91B7261A7B1424004E1BF9 /* UITextField+VDAlwaysReveal.m */,
+				FE91B7271A7B1424004E1BF9 /* UITextField+VDFloatingTip.h */,
+				FE91B7281A7B1424004E1BF9 /* UITextField+VDFloatingTip.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		FE91B72B1A7B1424004E1BF9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE0F64191B05F5D100F489E9 /* vd_loading_hud_error.png */,
+				FE0F641A1B05F5D100F489E9 /* vd_loading_hud_error@2x.png */,
+				FE0F641B1B05F5D100F489E9 /* vd_loading_hud_success.png */,
+				FE0F641C1B05F5D100F489E9 /* vd_loading_hud_success@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE91B73D1A7B1C6E004E1BF9 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE91B73E1A7B1C83004E1BF9 /* UIViewController+VDAspects.h */,
+				FE91B73F1A7B1C83004E1BF9 /* UIViewController+VDAspects.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		FE9CFEDA1B047D4500031B67 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FE9CFEDB1B047D5400031B67 /* VDSocketClient.h */,
+				FE9CFEDC1B047D5400031B67 /* VDSocketClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FEECE51B1A809C970074B57A /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				FEECE51C1A809CCA0074B57A /* UIView+VDFullscreen.h */,
+				FEECE51D1A809CCA0074B57A /* UIView+VDFullscreen.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		FEECE63D1A8DEE2B0074B57A /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				FEECE63E1A8DEE380074B57A /* UIButton+VDUtil.h */,
+				FEECE63F1A8DEE380074B57A /* UIButton+VDUtil.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		FEFB41411B043E2800587F8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEFB41421B043E2800587F8C /* NSObject+VDModel.h */,
+				FEFB41431B043E2800587F8C /* NSObject+VDModel.m */,
+				FEFB41441B043E2800587F8C /* VDModelFile.h */,
+				FEFB41451B043E2800587F8C /* VDModelFile.m */,
+				FEFB41461B043E2800587F8C /* VDModelImageFile.h */,
+				FEFB41471B043E2800587F8C /* VDModelImageFile.m */,
+				FEFB41481B043E2800587F8C /* VDModelObject.h */,
+				FEFB41491B043E2800587F8C /* VDModelObject.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE91B6CB1A7B13C0004E1BF9 /* VDUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE91B6EF1A7B13C0004E1BF9 /* Build configuration list for PBXNativeTarget "VDUtil" */;
+			buildPhases = (
+				D30BB670D76B4EB03C8BD652 /* [CP] Check Pods Manifest.lock */,
+				FE91B6C81A7B13C0004E1BF9 /* Sources */,
+				FE91B6C91A7B13C0004E1BF9 /* Frameworks */,
+				FE91B6CA1A7B13C0004E1BF9 /* Resources */,
+				2E19DB98A6E119A408685AAB /* [CP] Embed Pods Frameworks */,
+				C53CEEB088DC8D9B43FDE526 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VDUtil;
+			productName = VDUtil;
+			productReference = FE91B6CC1A7B13C0004E1BF9 /* VDUtil.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE91B6E41A7B13C0004E1BF9 /* VDUtilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE91B6F21A7B13C0004E1BF9 /* Build configuration list for PBXNativeTarget "VDUtilTests" */;
+			buildPhases = (
+				AE4747ACAAFBD48460CA9876 /* [CP] Check Pods Manifest.lock */,
+				FE91B6E11A7B13C0004E1BF9 /* Sources */,
+				FE91B6E21A7B13C0004E1BF9 /* Frameworks */,
+				FE91B6E31A7B13C0004E1BF9 /* Resources */,
+				65899535748FC43CBA65FCBF /* [CP] Embed Pods Frameworks */,
+				080AED84CDD57CE49C35DE19 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE91B6E71A7B13C0004E1BF9 /* PBXTargetDependency */,
+			);
+			name = VDUtilTests;
+			productName = VDUtilTests;
+			productReference = FE91B6E51A7B13C0004E1BF9 /* VDUtilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE91B6C41A7B13C0004E1BF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Vilyever;
+				TargetAttributes = {
+					FE91B6CB1A7B13C0004E1BF9 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 2594YAARKH;
+					};
+					FE91B6E41A7B13C0004E1BF9 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FE91B6CB1A7B13C0004E1BF9;
+					};
+				};
+			};
+			buildConfigurationList = FE91B6C71A7B13C0004E1BF9 /* Build configuration list for PBXProject "VDUtil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE91B6C31A7B13C0004E1BF9;
+			productRefGroup = FE91B6CD1A7B13C0004E1BF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE91B6CB1A7B13C0004E1BF9 /* VDUtil */,
+				FE91B6E41A7B13C0004E1BF9 /* VDUtilTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE91B6CA1A7B13C0004E1BF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE91B6DB1A7B13C0004E1BF9 /* Main.storyboard in Resources */,
+				FE0F64201B05F5D100F489E9 /* vd_loading_hud_success@2x.png in Resources */,
+				FE91B6E01A7B13C0004E1BF9 /* LaunchScreen.xib in Resources */,
+				FE0F641E1B05F5D100F489E9 /* vd_loading_hud_error@2x.png in Resources */,
+				FE0F628E1B04866B00F489E9 /* VDNoticeMsgViewController.xib in Resources */,
+				FE91B7391A7B1424004E1BF9 /* VDPickerBoardController.xib in Resources */,
+				FE0F641F1B05F5D100F489E9 /* vd_loading_hud_success.png in Resources */,
+				FE91B7361A7B1424004E1BF9 /* VDDateBoardController.xib in Resources */,
+				FE91B7451A7B1DAA004E1BF9 /* TestViewController.xib in Resources */,
+				FE0F641D1B05F5D100F489E9 /* vd_loading_hud_error.png in Resources */,
+				FE91B6DD1A7B13C0004E1BF9 /* Images.xcassets in Resources */,
+				FE0F64141B05E98600F489E9 /* VDLoadingHudViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE91B6E31A7B13C0004E1BF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		080AED84CDD57CE49C35DE19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VDUtilTests/Pods-VDUtilTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E19DB98A6E119A408685AAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VDUtil/Pods-VDUtil-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65899535748FC43CBA65FCBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VDUtilTests/Pods-VDUtilTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE4747ACAAFBD48460CA9876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C53CEEB088DC8D9B43FDE526 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VDUtil/Pods-VDUtil-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D30BB670D76B4EB03C8BD652 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE91B6C81A7B13C0004E1BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE23CE581A7F5A28007C059D /* NSObject+VDAspects.m in Sources */,
+				FE0F64241B05F9F200F489E9 /* NSObject+VDPersistent.m in Sources */,
+				FEF5A0E01AC91F0E00130D02 /* NSObject+VDDelayOperation.m in Sources */,
+				FE91B72E1A7B1424004E1BF9 /* UIView+VDBounce.m in Sources */,
+				FE8426631D2A2E6400B628D8 /* CocoaSecurity.m in Sources */,
+				FE91B7321A7B1424004E1BF9 /* UILabel+VDMarquee.m in Sources */,
+				FE0F63341B058EB900F489E9 /* TestRouter.m in Sources */,
+				FE91B7331A7B1424004E1BF9 /* UITextView+VDLengthLimitation.m in Sources */,
+				FE91B72F1A7B1424004E1BF9 /* UIView+VDShake.m in Sources */,
+				FEFB414C1B043E2800587F8C /* VDModelImageFile.m in Sources */,
+				FE91B72C1A7B1424004E1BF9 /* PulsingHaloLayer.m in Sources */,
+				FEFB414D1B043E2800587F8C /* VDModelObject.m in Sources */,
+				FE91B7371A7B1424004E1BF9 /* VDKeyboardInputAccessoryViewController.m in Sources */,
+				FE0F63311B0589A900F489E9 /* VDRouterBaseViewController.m in Sources */,
+				FE91B6D81A7B13C0004E1BF9 /* ViewController.m in Sources */,
+				FE91B73B1A7B1424004E1BF9 /* UITextField+VDAlwaysReveal.m in Sources */,
+				FE23CE551A7B8BF3007C059D /* UIImageView+VDFullscreen.m in Sources */,
+				FE0F62831B04826200F489E9 /* UIView+VDLoadingHud.m in Sources */,
+				FEECE51E1A809CCA0074B57A /* UIView+VDFullscreen.m in Sources */,
+				FE91B7401A7B1C83004E1BF9 /* UIViewController+VDAspects.m in Sources */,
+				FE91B7341A7B1424004E1BF9 /* UITextView+VDPlaceHolder.m in Sources */,
+				FE0F632E1B05852F00F489E9 /* VDRouterBaseAppDelegate.m in Sources */,
+				FE91B73A1A7B1424004E1BF9 /* UISearchBar+VDAlwaysReveal.m in Sources */,
+				FE91B7441A7B1DAA004E1BF9 /* TestViewController.m in Sources */,
+				FE91B73C1A7B1424004E1BF9 /* UITextField+VDFloatingTip.m in Sources */,
+				FE0F62861B0483F300F489E9 /* UIView+VDNoticeMsg.m in Sources */,
+				FE9CFEDD1B047D5400031B67 /* VDSocketClient.m in Sources */,
+				FEFB414B1B043E2800587F8C /* VDModelFile.m in Sources */,
+				FE0F632A1B0584BC00F489E9 /* VDRouterRootNavigationViewController.m in Sources */,
+				FE8426621D2A2E6400B628D8 /* Base64.m in Sources */,
+				FE91B7301A7B1424004E1BF9 /* UIView+VDAnimation.m in Sources */,
+				FEECE6401A8DEE380074B57A /* UIButton+VDUtil.m in Sources */,
+				FE91B6D51A7B13C0004E1BF9 /* AppDelegate.m in Sources */,
+				FEFB414A1B043E2800587F8C /* NSObject+VDModel.m in Sources */,
+				FE0F64131B05E98600F489E9 /* VDLoadingHudViewController.m in Sources */,
+				FE91B7351A7B1424004E1BF9 /* VDDateBoardController.m in Sources */,
+				FE0F628D1B04866B00F489E9 /* VDNoticeMsgViewController.m in Sources */,
+				FE91B6D21A7B13C0004E1BF9 /* main.m in Sources */,
+				FEECE5141A7F79D00074B57A /* NSObject+VDPop.m in Sources */,
+				FE91B7311A7B1424004E1BF9 /* NSObject+VDReactiveCocoa.m in Sources */,
+				FE91B7381A7B1424004E1BF9 /* VDPickerBoardController.m in Sources */,
+				FE0F63261B057EF600F489E9 /* VDRouter.m in Sources */,
+				FEF5A0E31AC92D1D00130D02 /* CheckViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE91B6E11A7B13C0004E1BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE91B6EC1A7B13C0004E1BF9 /* VDUtilTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE91B6E71A7B13C0004E1BF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE91B6CB1A7B13C0004E1BF9 /* VDUtil */;
+			targetProxy = FE91B6E61A7B13C0004E1BF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE91B6D91A7B13C0004E1BF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE91B6DA1A7B13C0004E1BF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE91B6DE1A7B13C0004E1BF9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE91B6DF1A7B13C0004E1BF9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE91B6ED1A7B13C0004E1BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE91B6EE1A7B13C0004E1BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE91B6F01A7B13C0004E1BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2A08DD4EE50AC9FCFD9986 /* Pods-VDUtil.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = VDUtil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		FE91B6F11A7B13C0004E1BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7552C18043B993580FFF2D19 /* Pods-VDUtil.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = VDUtil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		FE91B6F31A7B13C0004E1BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F7022E78B8F27D0B651735C /* Pods-VDUtilTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VDUtilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VDUtil.app/VDUtil";
+			};
+			name = Debug;
+		};
+		FE91B6F41A7B13C0004E1BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 840D46BE73325EB987A8C5F0 /* Pods-VDUtilTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VDUtilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VDUtil.app/VDUtil";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE91B6C71A7B13C0004E1BF9 /* Build configuration list for PBXProject "VDUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE91B6ED1A7B13C0004E1BF9 /* Debug */,
+				FE91B6EE1A7B13C0004E1BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE91B6EF1A7B13C0004E1BF9 /* Build configuration list for PBXNativeTarget "VDUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE91B6F01A7B13C0004E1BF9 /* Debug */,
+				FE91B6F11A7B13C0004E1BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE91B6F21A7B13C0004E1BF9 /* Build configuration list for PBXNativeTarget "VDUtilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE91B6F31A7B13C0004E1BF9 /* Debug */,
+				FE91B6F41A7B13C0004E1BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE91B6C41A7B13C0004E1BF9 /* Project object */;
+}

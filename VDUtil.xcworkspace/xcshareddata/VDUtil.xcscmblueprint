@@ -1,0 +1,43 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1A3781700640054CBD2D3816E1DDFD42CF550835" : 0,
+    "F2FE0AAE95F0B87896F2BEE0B176D4FC32D691A3" : 0,
+    "E28E36D423EC87798E52E2BF482E9F7A1E6479D6" : 0,
+    "8B3366FBF9699A8CCB764F44E854D1F695C54A83" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B2224DF0-DFDD-4CAF-B25B-2E6CDC9D1A8B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1A3781700640054CBD2D3816E1DDFD42CF550835" : "VDKit\/",
+    "F2FE0AAE95F0B87896F2BEE0B176D4FC32D691A3" : "..\/VDLocal\/pop",
+    "E28E36D423EC87798E52E2BF482E9F7A1E6479D6" : "..\/VDLocal\/SDWebImage",
+    "8B3366FBF9699A8CCB764F44E854D1F695C54A83" : "..\/VDLocal\/Aspects"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VDUtil",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VDUtil.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:vilyever\/FTETiOSKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1A3781700640054CBD2D3816E1DDFD42CF550835"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/steipete\/Aspects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B3366FBF9699A8CCB764F44E854D1F695C54A83"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rs\/SDWebImage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E28E36D423EC87798E52E2BF482E9F7A1E6479D6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/facebook\/pop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F2FE0AAE95F0B87896F2BEE0B176D4FC32D691A3"
+    }
+  ]
+}
