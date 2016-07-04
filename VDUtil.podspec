@@ -23,6 +23,7 @@ Pod::Spec.new do |s|
     s.dependency 'ReactiveCocoa', '2.0'
     s.dependency 'Aspects', '1.4.1'
     s.dependency 'CocoaLumberjack', '2.0.0-beta4'
+    s.dependency 'pop', '1.0'
     s.dependency 'POP+MCAnimate', '2.0.1'
     s.dependency 'Masonry', '0.6.0'
     s.dependency 'MBProgressHUD', '0.9'
